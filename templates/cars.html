@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block title %}Car Collection{% endblock %}
+{% block content %}
+
+    <h1>Your Car Collection</h1>
+    <ul>
+        {% for car in cars %}
+        <li>{{ car['make'] }} - {{ car['model'] }} ({{ car['year'] }})</li>
+        {% endfor %}
+    </ul>
+
+
+
+{% endblock %}

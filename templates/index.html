@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %} car inventory</title>
+    {% endblock %}
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="static/images/buick_suv.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand" href="#">Car Inventory</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">car inventory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logout</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign in/ Sign up
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">login</a>
+                        <a class="dropdown-item" href="authentication.signup.html">sign up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="content">{% block content %}{% endblock %}</div>
+
+    <div
+        class="row justify-content-center align-items-center g-2"
+    >
+        <div class="col">
+            <div class="card" style="width:18rem;">
+                <img src="static/images/white prius.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Car inventory website</h5>
+                    <p class="card-text">Here we have a car inventory website using flask, insomnia, and api</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:18rem;">
+                <img src="static/images/white prius.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Car inventory website</h5>
+                    <p class="card-text">Here we have a car inventory website using flask, insomnia, and api</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width:18rem;">
+                <img src="static/images/white prius.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Car inventory website</h5>
+                    <p class="card-text">Here we have a car inventory website using flask, insomnia, and api</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2024 by Terrence Sardin</a>.
+        {% endblock %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
